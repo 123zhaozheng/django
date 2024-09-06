@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+<span>{{ name }} is {{ age }}</span>
+{#<br>#}
+{#<a href="{% url 'index:test' %}">查看日期</a> #}
+<br>
+<a href="{% url 'index:download' %}">点击即可下载</a>
+
+<br>
+<form action="" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+<input type="file" name="file" />
+<br>
+<input type="submit" value="上传">
+</form>
+
+{#<a href='media/ccc.png'>查看日期</a>#}
+
+</body>
+</html>
