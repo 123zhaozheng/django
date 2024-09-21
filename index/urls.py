@@ -10,4 +10,9 @@ urlpatterns=[
     path('turnTo',RedirectView.as_view(url='/'),name='turnTo'),
     path('download',views.download,name='download'),
     path('upload',views.upload,name='upload'),
+    path('create',views.create,name='create'),
+    path('cookie',views.cookie,name='cookie'),
+    path('getHeader',views.getHeader,name='getHeader'),
+    path('turnTo2',views.turnTo.as_view(),name='turnTo2'),
+    path('nihao',views.nihao.as_view(),name='nihao'),
 ]

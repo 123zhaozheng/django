@@ -28,5 +28,6 @@ urlpatterns = [
     re_path('media/(?P<path>.*)',serve,
             {'document_root':settings.MEDIA_ROOT},name='media'),
     path('user/',include(('user.urls','user'),namespace='user')),
+    path('newText/',include(('newapp.urls','newapp'),namespace = 'newappp')),
 
 ]
